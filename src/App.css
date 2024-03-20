@@ -1,0 +1,57 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 64px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  
+}
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  height: 65px;
+  display: flex;
+  align-items: center;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  width: 300px; 
+}
+
+.subitem {
+  padding: 6px 2px;
+}
+.subitem:hover {
+  background-color: #cbdfd8;
+}
+.subtexts {
+  position: fixed;
+    top: 65px;
+    height: 100%;
+}
+.subtext {
+  padding: 6px
+}
+.subtext:hover {
+  background-color: #cbdfd8;
+}
+
+.texts-fixed {
+  position: fixed;
+  top: 65px;
+  width: 100%;
+  z-index: 9999; /* Đảm bảo nằm trên tất cả các phần khác */
+  background-color: #fff; /* Màu nền của phần texts */
+  overflow-y: auto; /* Cho phép cuộn nếu nội dung quá dài */
+}
